@@ -19,5 +19,5 @@ Repository del gruppo 7Commits per il corso di Ingegneria del Software 24/25.
 - **Gruppo - Lotto**: 20-II
 
 ## Contatti:
-- Email: 7commits@gmail.com
+- Email: [7commits@gmail.com](mailto:7commits@gmail.com)
 - GitHub: [@7Commits](https://github.com/7Commits)
