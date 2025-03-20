@@ -1,4 +1,4 @@
-# 7Commits-SWE 🛠️
+![7Commits](Documents/media/7CLogoFull.png)
 
 ## 📌 Descrizione:
 Repository del gruppo 7Commits per il corso di Ingegneria del Software 24/25.
