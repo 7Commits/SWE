@@ -53,8 +53,8 @@
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 4,
   [*Destinatari*],[*Responsabile*],[*Redattori*],[*Verificatori*],
-  [Prof. Tullio Vardanega],[Stefano Dal Poz],[Marco Cola],[Ruize Lin],
-  [Prof. Riccardo Cardin],[],[Michele Ogniben],[Giulia Hu],
+  [Prof. Tullio Vardanega],[Ruize Lin],[Marco Cola],[Michele Ogniben],
+  [Prof. Riccardo Cardin],[],[Stefano Dal Poz],[Giulia Hu],
   [Gruppo 7Commits],[],[Giada Rossi],[Mattia Piva],
   [_Zucchetti_]
 )
@@ -67,7 +67,7 @@
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 5,
   [*Versione*],[*Data*],[*Autori*],[*Verificatori*],[*Descrizione*],
-  [v1.1],[2025-03-12], [Marco Cola, Giada Rossi],[Ruize Lin, Mattia Piva],[Aggiunte risposte alle domande e presenze all'incontro, concluso il documento],
+  [v1.1],[2025-03-12], [Marco Cola],[Mattia Piva],[Aggiunte risposte alle domande e presenze all'incontro],
   [v1.0],[2025-03-12],[Marco Cola],[Mattia Piva],[Aggiunto logo e domande effettuate],
   [v0.1],[2025-03-12],[Marco Cola],[Giulia Hu],[Prima Bozza],
 )
@@ -130,3 +130,18 @@ L'azienda ritiene che questa parte del progetto sia la più interessante ed è a
 == Come può essere quantificato il grado di errore nelle risposte dei LLM analizzati?
 L'azienda consiglia di quantificare tramite una percentuale la correttezza di ogni risposta fornita, in base al modello.
 
+
+#v(2cm) 
+#align(right)[
+  #text(size: 10pt, "Approvazione dell'azienda")
+]
+
+#align(right)[
+  #text(size: 10pt, "Nome:")
+  #v(0.5cm)
+  #line(length: 5cm, stroke: 0.5pt)
+  #v(0.2cm)
+  #text(size: 10pt, "Firma:")
+  #v(0.4cm)
+  #line(length: 5cm, stroke: 0.5pt)
+]

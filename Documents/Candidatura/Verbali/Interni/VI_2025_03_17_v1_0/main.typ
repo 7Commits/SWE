@@ -1,3 +1,7 @@
+#let titolo = "Verbale Interno del "
+#let versione = "1.0"
+#let data = "2025-03-17"
+
 #set page(
   paper: "a4",      // Formato A4
   margin: (top: 2cm, bottom: 2cm, left: 2cm, right: 2cm),
@@ -9,7 +13,7 @@
       columns: (1fr, 1fr),
       align: (left, horizon+right),
       image("7CLogoFull.png", width: 7.5em),
-      text("Verbale Interno del 2025-03-06")
+      text(titolo+data)
       )
     ]
   }
@@ -29,9 +33,9 @@
   #name
 ]
 
-#align(center, text(weight: 600, size: 24pt, "Verbale Interno del 2025-03-06"))
+#align(center, text(weight: 600, size: 24pt, titolo + data))
 
-#align(center, text(size: 15pt, "2025-03-06 - versione 1.0"))
+#align(center, text(size: 15pt," versione " + versione))
 
 #v(1cm)
 
@@ -45,6 +49,7 @@
   #align(right, text("Α.Α. 2024/2025"))
 ]
 #v(1.5cm)
+
 
 #set align(left)
 
@@ -65,22 +70,23 @@
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 5,
   [*Versione*],[*Data*],[*Autori*],[*Verificatori*],[*Descrizione*],
-  [v1.0], [2025-03-11], [Stefano Dal Poz, Marco Cola],[Mattia Piva, Giulia Hu],[Aggiunta del logo e riorganizzazione del documento],
-  [v0.1],[2025-03-10],[Stefano Dal Poz],[Giulia Hu],[Prima Bozza],
+  [v1.0],[2025-03-18],[Marco Cola],[Michele Ogniben],[Completato documento],
+  [v0.1],[2025-03-17],[Marco Cola],[Michele Ogniben],[Prima bozza],
 )
 
 #pagebreak()
 
-#outline(depth: 3)
+
+#outline(depth: 5)
 
 #pagebreak()
 
 #set heading(numbering: "1.")
 
-= Contenuti del Verbale
+= Contenuti del verbale
 
 == Informazioni sulla riunione
-Prima riunione del gruppo per definire lo stesso. Nella riunione erano presenti: 
+La riunione ha avuto luogo sulla piattaforma Discord, con orario di inizio 20.15 e orario di fine 21.00. Alla riunione hanno partecipato i seguenti componenti:
 #table(
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 2,
@@ -91,29 +97,30 @@ Prima riunione del gruppo per definire lo stesso. Nella riunione erano presenti:
   [Giulia Hu],[Si],
   [Ruize Lin],[Si],
   [Michele Ogniben],[Si],
-  [Mattia Piva],[Si],
+  [Mattia Piva],[No],
   [Giada Rossi],[Si],
 )
 
 == Ordine del giorno
-- Definizione del nome del gruppo
-- Analisi e indicazione di preferenza in merito ai capitolati
-- Organizzazione riunioni interne future
+
+- Scrittura mail per approvazione verbali esterni Zucchetti e SyncLab
+- Avvio della sezione di Glossario nel sito web del gruppo
+- Discussione sul documento di Dichiarazione degli Impegni
+- Definizione del piano di lavoro dei prossimi giorni
 
 = Sintesi dell’incontro
-Riunione avvenuta giovedì 06/03/2025 via Discord dalle 9:30 alle 11 per gestire l'organizzazione iniziale del gruppo e discutere le varie preferenze dei singoli componenti in merito ai 4 capitolati a disposizione. Sono state inoltre analizzate possibili tecnologie da utilizzare per la gestione futura del progetto, come Git, GitHub, Typst e una mail ufficiale di riferimento per le comunicazioni, ovvero #link("mailto:7commits@gmail.com", "7commits@gmail.com"), si è anche iniziato a discutere della creazione di un sito web per la raccolta della documentazione prodotta.
+Nell'incontro odierno sono stati discussi diversi temi, principalmente riguardanti gli ultimi documenti da scrivere per la fase di Candidatura, ovvero la Dichiarazione degli impegni, la lettera di candidatura e l'analisi dei capitolati. Dopo un checkup generale sullo stato di completamento dei documenti si è proseguito con il discutere della sezione di Glossario del sito web e dell'invio delle mail per la richiesta di approvazione dei due verbali esterni. Dopo aver raggiunto una decisione riguardo all'impegno orario e alla data di completamento del progetto la riunione è terminata.
 
 = Decisioni prese
-- È stato scelto il nome del gruppo, ovvero \"7Commits\"
-- In seguito all'analisi dei capitolati a disposizione sono state date le seguenti indicazioni di preferenza: capitolato C1 come prima scelta, capitolato C4 come seconda scelta e capitolato C6 come terza scelta.
-- Si è scelto di utilizzare Telegram per la messaggistica, Discord per le riunioni, Typst per la stesura dei documenti, Git come strumento di controllo di versione e GitHub come piattaforma di hosting per le repository
+- Deciso la data limite di consegna del progetto
+- Deciso il programma dei prossimi giorni
 
-= Attività
+= Attività 
 
 #table(
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 3,
   [*ID*],[*Dettaglio*],[*Assegnato/i*],
-  [#link("https://github.com/7Commits/SWE/issues/2", "#2")],[Creazione sito documentazione], [Marco Cola, Ruize Lin],
-  [#link("https://github.com/7Commits/SWE/issues/1", "#1")],[Stesura di questo verbale], [Stefano Dal Poz]
+  [#link("https://github.com/7Commits/SWE/issues/12", "#12")],[Stesura verbale interno 2025_03_17], [Marco Cola],
+  [#link("https://github.com/7Commits/SWE/issues/13", "#13")],[Caricamento documenti firmati dalle aziende], [Marco Cola]
 )

@@ -31,7 +31,7 @@
 
 #align(center, text(weight: 600, size: 24pt, "Verbale Interno del 2025-03-10"))
 
-#align(center, text(size: 15pt, "2025-03-10 - v1.0"))
+#align(center, text(size: 15pt, "2025-03-10 - v1.1"))
 
 #v(1cm)
 
@@ -53,9 +53,9 @@
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 4,
   [*Destinatari*],[*Responsabile*],[*Redattori*],[*Verificatori*],
-  [Prof. Tullio Vardanega],[Stefano Dal Poz],[Marco Cola],[Ruize Lin],
-  [Prof. Riccardo Cardin],[],[Michele Ogniben],[Giulia Hu],
-  [Gruppo 7Commits],[],[Giada Rossi],[]
+  [Prof. Tullio Vardanega],[Ruize Lin],[Marco Cola],[Michele Ogniben],
+  [Prof. Riccardo Cardin],[],[Stefano Dal Poz],[Giulia Hu],
+  [Gruppo 7Commits],[],[Giada Rossi],[Mattia Piva]
 )
 
 #pagebreak()
@@ -66,7 +66,8 @@
   fill: (x, y) => if y == 0 {rgb("#d9d9d9")},
   columns: 5,
   [*Versione*],[*Data*],[*Autori*],[*Verificatori*],[*Descrizione*],
-  [v1.0], [2025-03-11], [Marco Cola],[Ruize Lin, Giulia Hu],[Aggiunta del logo e riorganizzazione del documento],
+  [v1.1],[2025-03-11],[Marco Cola],[Mattia Piva],[Aggiunta tabella attività],
+  [v1.0], [2025-03-11], [Marco Cola],[Mattia Piva, Giulia Hu],[Aggiunta del logo e riorganizzazione del documento],
   [v0.1],[2025-03-10],[Marco Cola],[Giulia Hu],[Prima Bozza],
 )
 
@@ -122,5 +123,7 @@ Nell'incontro odierno sono stati avviati i primi contatti con le aziende Zucchet
   [#link("https://github.com/7Commits/SWE/issues/4", "#4")],[Modifiche stilistiche al sito web], [Ruize Lin],
   [#link("https://github.com/7Commits/SWE/issues/5", "#5")],[Stesura prima versione lettera di presentazione], [Giada Rossi],
   [#link("https://github.com/7Commits/SWE/issues/6", "#6")],[Stesura prima versione documento Dichiarazione Impegni], [Michele Ogniben],
-  [#link("https://github.com/7Commits/SWE/issues/7", "#7")],[Organizzazione incontro con Aziende proponenti], [Marco Cola]
+  [#link("https://github.com/7Commits/SWE/issues/7", "#7")],[Organizzazione incontro con Aziende proponenti], [Marco Cola],
+  [#link("https://github.com/7Commits/SWE/issues/10", "#10")],[Stesura Verbale Esterno 2025-03-12_Zucchetti],[Marco Cola],
+  [#link("https://github.com/7Commits/SWE/issues/11", "#11")],[Stesura Verbale Esterno 2025-03-12_SyncLab],[Marco Cola]
 )
