@@ -1,0 +1,33 @@
+name: Sync Documenti a repo 7Commits 
+
+on:
+  push:
+    paths:
+      - "Documents/**" # Si attiva solo se cambia qualcosa in Documents/ di SWE
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout SWE repo
+        uses: actions/checkout@v4
+
+      - name: Clona la repo del sito web
+        run: |
+          git clone https://x-access-token:${{ secrets.SITE_DEPLOY_PAT }}@github.com/7Commits/7Commits.git site
+
+      - name: Copia i nuovi PDF nel sito
+        run: |
+          rsync -av --delete Documents/ site/docs/
+
+      - name: Commit e push delle modifiche
+        run: |
+          cd site
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "Sync new docs from SWE" || echo "No changes to commit"
+          git push
