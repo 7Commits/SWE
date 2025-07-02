@@ -7,7 +7,6 @@ Il gruppo si è aggiudicato l'appalto per il **[capitolato 1](https://www.math.u
 ## 👥 Componenti del Gruppo:
 - **Marco Cola** - 2079237
 - **Ruize Lin** - 2068236
-- **Michele Ogniben** - 2042325
 - **Stefano Dal Poz** - 1204683
 - **Giulia Hu** - 2009118
 - **Mattia Piva** - 2008065
